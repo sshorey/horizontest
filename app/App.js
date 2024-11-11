@@ -1,8 +1,9 @@
 import { generateClient } from "aws-amplify/data";
+import './style.css';
+import { Amplify } from 'aws-amplify';
+import outputs from '../amplify_outputs.json';
 
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
-Amplify.configure(outputs)
+Amplify.configure(outputs);
 
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
