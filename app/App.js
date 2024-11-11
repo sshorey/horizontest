@@ -1,3 +1,9 @@
+import { generateClient } from "aws-amplify/data";
+
+import { Amplify } from "aws-amplify";
+import outputs from "@/amplify_outputs.json";
+Amplify.configure(outputs)
+
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
