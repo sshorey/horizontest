@@ -3,5 +3,5 @@ import { auth } from './auth/resource.js';
 
 defineBackend({
   auth,
-  data,
+
 });
